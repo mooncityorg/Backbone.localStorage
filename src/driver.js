@@ -4,7 +4,6 @@ import { LocalStorage } from './localstorage';
 import { sync as localSync } from './sync';
 import { getLocalStorage } from './utils';
 
-
 Backbone.LocalStorage = LocalStorage;
 const ajaxSync = Backbone.sync;
 
