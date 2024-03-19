@@ -4,6 +4,18 @@
 [![Coverage Status](https://coveralls.io/repos/github/jeromegn/Backbone.localStorage/badge.svg?branch=master)](https://coveralls.io/github/jeromegn/Backbone.localStorage?branch=master)
 [![npm version](https://badge.fury.io/js/backbone.localstorage.svg)](https://badge.fury.io/js/backbone.localstorage)
 
+const myModel = new SomeModel();
+myModel.fetch({
+  ajaxSync: true  // Fetches from the server
+});
+
+myModel.save({
+  new: "value"
+}, {
+  ajaxSync: true  // Pushes back to the server
+});
+
+
 An adapter that replaces `Backbone.sync` to save to `window.localStorage`
 instead of to the server.
 
